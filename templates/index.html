@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Insurance Prediction</title>
+<!-- 
+
+Get Ready Template
+
+https://templatemo.com/tm-521-get-ready
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="team" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/vegas.min.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-style.css') }}">
+
+</head>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- GRID LINE -->
+    <section class="grid">
+         <div class="container">
+            <div class="row">
+
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+
+            </div>
+         </div>
+    </section>
+     <!-- HOME -->
+     <section id="home">
+        <div class="overlay"></div>
+          <div class="container" >
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="home-info"  style="background-image: url({{ url_for('static', filename='images/homescreen.jpg') }});background-size: cover;">
+                              <h1>Machine Learning Based Regression Framework To Predict Health Insurance Premium</h1>
+                              <ul class="countdown">
+                               <h3 style="color:white">Enter the details:</h3>
+						        <form action="/predict" method='POST'>
+						          
+						          <p><input type="number" id="age" name="age" placeholder="Enter the Age" required="">
+						          </p>
+							<p>
+						          <select id="sex" name="sex">
+						          	<option value="" selected data-default>Select Sex</option>
+						            <option value="male">Male</option>
+						            <option value="female">Female</option>
+						          </select><br><br>
+						      </p>    
+						      <p>
+						          <input type="text" id="bmi" name="bmi" placeholder="Enter Body mass Index" required="">
+						          </p>
+<p>
+						         <select id="child" name="child">
+						          <option value="" selected data-default>Select No: of children</option>
+						            <option value="0">None</option>
+						            <option value="1">1</option>
+						            <option value="2">2</option>
+						            <option value="3">3</option>
+						            <option value="4">4</option>
+						            <option value="5">5</option>
+						          </select>
+</p>
+<br></br>
+<p>						          
+						          <select id="smoke" name="smoke">
+						          	<option value="" selected data-default>Smoker?</option>
+						            <option value="no">No</option>
+						            <option value="yes">Yes</option>
+						          </select>
+</p>
+<p>						          
+						         <select id="reg" name="reg">
+						          	<option value="" selected data-default>Select Region</option>
+						            <option value="northwest">North West</option>
+						            <option value="northeast">North East</option>
+						            <option value="southwest">South West</option>
+						            <option value="southeast">South East</option>
+						          </select><br><br>
+</p>
+<p>
+						          
+						          <input type="submit" value="Predict">
+</p>						        </form>     
+                              </ul> <!--
+                              <div class="subscribe-form">
+                                <form action="/predictfile" method= "POST" enctype="multipart/form-data">
+                                  <p style="color:white">Do you have large set of person details and want to predict insurance cost of all in a single shot?<br> Don't worry. You also have the option to upload data as csv file. Before uploading <br>make sure that file have columns arranged in the above order.</p>
+                                  <div>
+                                  	<input type="file" id="csvfile" name="csvfile">
+								                    	<button>submit</button>
+							                    	</div>
+                                </form>
+                              </div>
+		-->
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- SCRIPTS -->
+     <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/vegas.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/countdown.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Insurance Prediction</title>
+<!-- 
+
+Get Ready Template
+
+https://templatemo.com/tm-521-get-ready
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="team" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/vegas.min.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-style.css') }}">
+
+</head>
+<body background-image: url({{ url_for('static', filename='images/result.jpg') }})>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- GRID LINE -->
+    <section class="grid">
+         <div class="container">
+            <div class="row">
+
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+
+            </div>
+         </div>
+    </section>
+     <!-- HOME -->
+     <section id="home">
+        <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="home-info">
+                              <h1>Prediction Result !!</h1>
+                              <h2 style="color:white">The estimated Health insurance Premium will be around {{predic}}</h2>
+                              <!-- You can change the date time in init.js file -->
+                              <ul class="countdown">
+                               <h3 style="color:white">Thanks for using the application.</h3>
+                               <a href="/">Predict again</a>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- SCRIPTS -->
+     <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/vegas.min.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/countdown.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+</body>
+</html>
